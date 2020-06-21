@@ -1,5 +1,5 @@
 # SF Crime Statistics with Spark Streaming
-## Requirements`
+## Requirements
 
 kafka-python
 python 3.7

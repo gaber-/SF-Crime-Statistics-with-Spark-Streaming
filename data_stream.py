@@ -35,8 +35,8 @@ def run_spark_job(spark):
         .option("startingOffsets", "earliest") \
         .option('kafka.bootstrap.servers', 'localhost:9092') \
         .option('subscribe', 'com.udacity.police_calls') \
-        .option('maxRatePerPartition', 50) \
-        .option('maxOffsetPerTrigger', 10) \
+        .option('maxRatePerPartition', 100) \
+        .option('maxOffsetPerTrigger', 200) \
         .load()
         
 

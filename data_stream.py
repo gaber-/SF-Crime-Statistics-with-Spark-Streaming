@@ -125,6 +125,8 @@ if __name__ == "__main__":
         .master("local[*]") \
         .appName("KafkaSparkStructuredStreaming") \
         .config("spark.ui.port",3000) \
+        .config("spark.sql.shuffle.partitions", "30") \
+        .config("spark.default.parallelism", "6") \
         .getOrCreate()
 
     logger.info("Spark started")
